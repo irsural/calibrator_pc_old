@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>Images/go-next.png</file>
+        <file>Images/go-previous.png</file>
+        <file>Images/editcopy.png</file>
+        <file>Images/minus.png</file>
+        <file>Images/plus.png</file>
+        <file>Images/delete@2x.png</file>
+        <file>Images/down.png</file>
+        <file>Images/up.png</file>
+        <file>Images/checkmark.png</file>
+        <file>Images/media-play-32.png</file>
+        <file>Images/standardbutton-cancel-128.png</file>
+        <file>Images/ok.png</file>
+        <file>Images/clear.png</file>
+        <file>Images/new.png</file>
+        <file>Images/app_window_restore.png</file>
+        <file>Images/blue-puzzle.png</file>
+        <file>Images/blueStone.png</file>
+        <file>Images/greenStone.png</file>
+        <file>Images/redStone.png</file>
+        <file>Images/yellowStone.png</file>
+        <file>Images/process_black.GIF</file>
+        <file>Images/process_red.GIF</file>
+        <file>Images/process_yellow.GIF</file>
+        <file>Images/connect.GIF</file>
+        <file>Images/error.png</file>
+        <file>Images/warning.png</file>
+        <file>Images/icon_check_gray.png</file>
+        <file>Images/icon_check_green.png</file>
+        <file>Images/icon_check_orange.png</file>
+    </qresource>
+</RCC>
