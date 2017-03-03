@@ -23,8 +23,11 @@
 
 #include <irsfinal.h>
 
-#define DEVICE_PARAMETERS_FORM_ENABLED 0
-#define DISABLE_MENU_ITEMS 0
+#define CLBPC_DEBUG 0
+#define CLBPC_RELEASE !CLBPC_DEBUG
+
+#define DEVICE_PARAMETERS_FORM_ENABLED CLBPC_DEBUG
+#define MENU_ITEMS_ENABLED CLBPC_DEBUG
 
 namespace Ui {
   class MainWindow;
@@ -177,6 +180,10 @@ private slots:
   void on_autoConnectAnyDevicecheckBox_clicked(bool checked);
 
   void on_syncTimePushButton_clicked();
+
+  void on_directContrloModeAction_triggered();
+
+  void on_statusAction_triggered();
 
 protected:
   //void focusInEvent(QFocusEvent * event);

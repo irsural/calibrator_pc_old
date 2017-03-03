@@ -378,7 +378,7 @@ QVariant ParamsTreeModel::headerData(int section, Qt::Orientation orientation,
 
 QIcon ParamsTreeModel::getIcon() const
 {
-
+  return QIcon();
 }
 
 void ParamsTreeModel::updateDisplayedPeople()

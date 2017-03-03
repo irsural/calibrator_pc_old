@@ -6561,19 +6561,19 @@ p, li { white-space: pre-wrap; }
      <string>CalibratorPC</string>
     </property>
    </widget>
-   <widget class="QMenu" name="menu">
+   <widget class="QMenu" name="menuTools">
     <property name="title">
      <string>Инструменты</string>
     </property>
     <addaction name="settingsAction"/>
    </widget>
-   <widget class="QMenu" name="menu_2">
+   <widget class="QMenu" name="menuHelp">
     <property name="title">
      <string>Справка</string>
     </property>
     <addaction name="action"/>
    </widget>
-   <widget class="QMenu" name="menu_3">
+   <widget class="QMenu" name="menuWindow">
     <property name="title">
      <string>Окно</string>
     </property>
@@ -6582,19 +6582,20 @@ p, li { white-space: pre-wrap; }
     <addaction name="showLogAction"/>
     <addaction name="hideNeedlessAction"/>
    </widget>
-   <widget class="QMenu" name="menu_4">
+   <widget class="QMenu" name="menuMode">
     <property name="title">
      <string>Режим</string>
     </property>
-    <addaction name="action_2"/>
+    <addaction name="directContrloModeAction"/>
+    <addaction name="statusAction"/>
     <addaction name="action_3"/>
     <addaction name="action_4"/>
    </widget>
    <addaction name="menuCalibratorPC"/>
-   <addaction name="menu"/>
-   <addaction name="menu_3"/>
-   <addaction name="menu_2"/>
-   <addaction name="menu_4"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuWindow"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuMode"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -6653,7 +6654,10 @@ p, li { white-space: pre-wrap; }
     <string>F11</string>
    </property>
   </action>
-  <action name="action_2">
+  <action name="directContrloModeAction">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
    <property name="text">
     <string>Генератор</string>
    </property>
@@ -6666,6 +6670,14 @@ p, li { white-space: pre-wrap; }
   <action name="action_4">
    <property name="text">
     <string>Поверка по шаблону</string>
+   </property>
+  </action>
+  <action name="statusAction">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Состояние</string>
    </property>
   </action>
  </widget>

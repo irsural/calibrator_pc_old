@@ -15,7 +15,7 @@
 
 const double dcv_max = 630;
 const double acv_max = 630;
-const double dci_max = 11;
+const double dci_max = 10.5;
 const double aci_max = 11;
 const double dcv_step_min = 2e-7;
 const double dcv_step_max = dcv_max/2;

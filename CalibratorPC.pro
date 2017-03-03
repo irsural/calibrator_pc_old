@@ -15,7 +15,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = CalibratorPC
 TEMPLATE = app
-QMAKE_TARGET_PRODUCT = N4
+QMAKE_TARGET_PRODUCT = N4-25
 QMAKE_TARGET_COMPANY = ООО "Радиоэлектронные системы"
 
 INCLUDEPATH += .

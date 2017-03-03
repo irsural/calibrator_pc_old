@@ -53,7 +53,7 @@ SettingsDialog::~SettingsDialog()
 int	SettingsDialog::exec()
 {
   write_settings_to_interface();
-  QDialog::exec();
+  return QDialog::exec();
 }
 
 /*void SettingsDialog::on_categoryListWidget_currentItemChanged(QListWidgetItem *current, QListWidgetItem *previous)

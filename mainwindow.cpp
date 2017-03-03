@@ -491,15 +491,18 @@ MainWindow::MainWindow(QWidget *parent) :
   //QList<QAbstractButton *> list = ui->buttonGroup_4->buttons();
   //qApp->
 
-  #if DISABLE_MENU_ITEMS
-  ui->showNavigationAction->setDisabled(true);
-  ui->showMeasuredPointsTreeViewAction->setDisabled(true);
-  ui->showLogAction->setDisabled(true);
-  ui->hideNeedlessAction->setDisabled(true);
-  ui->action_2->setDisabled(true);
-  ui->action_3->setDisabled(true);
-  ui->action_4->setDisabled(true);
-  #endif // DISABLE_MENU_ITEMS
+
+  ui->menuCalibratorPC->menuAction()->setVisible(MENU_ITEMS_ENABLED);
+  ui->menuWindow->menuAction()->setVisible(MENU_ITEMS_ENABLED);
+  /*ui->showNavigationAction->setVisible(MENU_ITEMS_ENABLED);
+  ui->showMeasuredPointsTreeViewAction->setVisible(MENU_ITEMS_ENABLED);
+  ui->showLogAction->setVisible(MENU_ITEMS_ENABLED);
+  ui->hideNeedlessAction->setVisible(MENU_ITEMS_ENABLED);*/
+  //ui->statusAction->setVisible(MENU_ITEMS_ENABLED);
+  ui->action_3->setVisible(MENU_ITEMS_ENABLED);
+  ui->action_4->setVisible(MENU_ITEMS_ENABLED);
+  ui->menuHelp->menuAction()->setVisible(MENU_ITEMS_ENABLED);
+
 }
 
 MainWindow::~MainWindow()
@@ -1736,4 +1739,14 @@ void MainWindow::on_syncTimePushButton_clicked()
   raw_time += offset_from_utc;
 
   m_calibrator.set_time(raw_time);
+}
+
+void MainWindow::on_directContrloModeAction_triggered()
+{
+  ui->modeStackedWidget->setCurrentWidget(ui->generatorModePage);
+}
+
+void MainWindow::on_statusAction_triggered()
+{
+  ui->modeStackedWidget->setCurrentWidget(ui->statePage);
 }
