@@ -1,0 +1,32 @@
+# calibrator_pc_old ignore
+/CalibratorPC.pro.user
+
+# irs global ignore
+*.*~
+*.SchDocPreview
+*.bak
+*.csv
+*.dcu
+*.dep
+*.ewt
+*.il?
+*.map
+*.obj
+*.pbd
+*.pbi
+*.pch
+*.r90
+*.s90
+*.tds
+*.tmp
+*.~*
+irsconfig.h
+lsprst7.*
+sysprs7.*
+tmpprst.*
+~$*.*
+~W*.tmp
+/__history
+/Desktop.ini
+*.orig
+*.ldb
